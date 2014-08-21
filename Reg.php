@@ -28,7 +28,7 @@ echo '<style>
 if($_POST)
 	{
             $username=trim($_POST['username']);
-            $username=mysqli_real_escape_string($connection,$username);
+            $username=mysqli_real_escape_string($connection,$username);// make data save before send query to MySQL
             $pass=trim($_POST['pass']);
             $pass=mysqli_real_escape_string($connection,$pass);
             $userOrAdmin='user';
