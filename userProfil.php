@@ -27,7 +27,7 @@ $select=mysqli_query($connection,'SELECT * FROM users_data INNER JOIN user_produ
         . 'ON users_data.user_id=user_products.user_id WHERE users_data.user_id="'.$_SESSION['user_id'].'" ');
 //echo '<pre>'.print_r($select, true).'</pre>';
 if(mysqli_num_rows($select)===0){
-    echo '<p class="RegIn">Нямате налични продуцти</p>';
+    echo '<p class="RegIn">Нямате налични продути</p>';
 }
 else{
     echo '<table border="1" class="centralForm" id="textCenter">
